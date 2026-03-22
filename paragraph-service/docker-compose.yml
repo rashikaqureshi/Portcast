@@ -6,3 +6,7 @@ services:
     container_name: paragraph_api
     ports:
       - "8000:8000"
+    volumes:
+      - .:/app  
+    environment:
+      - DATABASE_URL=sqlite:///./app/test.db
