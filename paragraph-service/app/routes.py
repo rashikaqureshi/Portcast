@@ -53,7 +53,6 @@ def dictionary(db: Session = Depends(get_db)):
 
     paragraphs = get_all_paragraphs(db)
 
-    # ✅ handle empty DB
     if not paragraphs:
         return []
 
